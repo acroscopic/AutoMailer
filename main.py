@@ -13,6 +13,7 @@ import threading
 import numpy as np
 from datetime import datetime
 
+now = datetime.now()
 start = now.strftime("%m/%d/%y - %H:%M:%S")
 smtp = ("smtp.gmail.com")
 port = 587
@@ -87,7 +88,7 @@ def Startup():
                         pass
                 for i in emails:
                         server.sendmail(sender_email, receiver_email, i)
-        print(f"LOG: startup email sent at {logtime}")
+        print(f"LOG: startup email sent at {start}")
 
 def Daily():
         now = datetime.now()
