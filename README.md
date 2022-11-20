@@ -1,3 +1,3 @@
-# RoutineManager
+# AutoMailer
 
-This is a script I use to remind me to do the things I try to do every day. It sends me emails every morning so that I can swipe them off my phone or delete them from my computer. I use my raspberry pi to have the script running in the background.
+This is a script I made to remind me to do daily tasks, and I also use it as a todo list. It sends me emails in morning so that I can swipe them off my phone or delete them from my computer. It can be used with a headless raspberry pi, or with crontab. There is also a file reminder.py which can be used to send one off emails.
