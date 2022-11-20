@@ -1,15 +1,23 @@
+#   _______       ______  ___
+#   ___    |      ___   |/  /
+#   __  /| |      __  /|_/ / 
+#   _  ___ |      _  /  / /  
+#   /_/  |_|      /_/  /_/   
+
+
 import sys
 import getpass
 import smtplib, ssl
 import requests
-import numpy as np
 
 port = 465
 context = ssl.create_default_context()
 
-sender_email = input("Please enter the sending email")
+# Hardcode these in for easy access, although it is a security risk.
 password = getpass.getpass("Input password and press enter:")
+sender_email = input("Please enter the sending email")
 receiver_email = input("Please enter the receiving email")
+
 message = input("Please enter your message: ")
 
 def Reminder():
